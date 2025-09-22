@@ -5,47 +5,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mummadi Sai Meghana - Portfolio</title>
   <style>
+    /* Global Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f5f7fa;
+      background: linear-gradient(135deg, #f0f4ff, #e8f7f0);
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background: #2d87f0;
+      background: linear-gradient(135deg, #2d87f0, #5ac8fa);
       color: #fff;
-      padding: 20px;
+      padding: 30px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    header h1 { margin: 0; font-size: 28px; }
-    header p { margin: 5px 0; }
-    section {
-      max-width: 900px;
-      margin: 20px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: bold;
     }
-    h2 {
-      border-bottom: 2px solid #2d87f0;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+    header p {
+      margin: 8px 0;
+      font-size: 16px;
     }
-    ul { padding-left: 20px; }
     .links a {
-      margin-right: 15px;
+      margin: 0 10px;
+      padding: 6px 12px;
       text-decoration: none;
+      background: #fff;
       color: #2d87f0;
       font-weight: bold;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .links a:hover {
+      background: #2d87f0;
+      color: #fff;
+    }
+    section {
+      max-width: 1000px;
+      margin: 25px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+    h2 {
+      color: #2d87f0;
+      border-left: 6px solid #5ac8fa;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    b {
+      color: #333;
     }
     footer {
       text-align: center;
-      padding: 15px;
-      background: #2d87f0;
+      padding: 18px;
+      background: linear-gradient(135deg, #2d87f0, #5ac8fa);
       color: #fff;
-      margin-top: 20px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+    /* Skill badges */
+    .skills p {
+      margin: 6px 0;
+    }
+    .badge {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #2d87f0;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 500;
     }
   </style>
 </head>
@@ -54,15 +101,15 @@
     <h1>Mummadi Sai Meghana</h1>
     <p>📍 Hyderabad, India | 📧 saimeghana0506@gmail.com | 📞 6301512944</p>
     <p class="links">
-      <a href="https://www.linkedin.com/in/mummadi-sai-meghana-1322762aa/" target="_blank">LinkedIn</a> |
+      <a href="https://www.linkedin.com/in/mummadi-sai-meghana-1322762aa/" target="_blank">LinkedIn</a>
       <a href="https://github.com/sai-meghana5" target="_blank">GitHub</a>
     </p>
   </header>
 
   <section>
-    <h2>About Me</h2>
+    <h2>Professional Summary</h2>
     <p>
-      I am a passionate developer with hands-on experience in <b>SAP ABAP</b> and <b>Full-Stack Web Development</b>. 
+      I am a passionate developer with hands-on experience in <b>SAP ABAP</b> and <b>Full-Stack Web Development</b>.  
       I enjoy building efficient, user-friendly solutions and have a strong foundation in <b>ERP platforms, modern technologies, 
       and problem-solving</b> to deliver real business value.
     </p>
@@ -79,16 +126,16 @@
   <section>
     <h2>Experience</h2>
     <ul>
-      <li><b>Salesforce Developer Intern</b> – Salesforce (Remote) – May 2025 – Jul 2025  
+      <li><b>Salesforce Developer Intern</b> – Salesforce (Remote) – May 2025 – Jul 2025
         <ul>
-          <li>Built <b>Apex classes</b> & <b>LWC</b> to optimize CRM solutions.</li>
-          <li>Reduced manual errors by <b>40%</b> and improved user satisfaction by <b>25%</b>.</li>
+          <li>Developed <b>Apex classes</b>, <b>LWC</b>, and automation workflows to improve CRM efficiency.</li>
+          <li>Optimized Salesforce solutions and improved user satisfaction by <b>25%</b>.</li>
         </ul>
       </li>
-      <li><b>ABAP Junior Developer Intern</b> – YuvaIntern (Remote) – Apr 2025 – May 2025  
+      <li><b>ABAP Junior Developer Intern</b> – YuvaIntern (Remote) – Apr 2025 – May 2025
         <ul>
-          <li>Designed and implemented <b>SAP S/4HANA ABAP module</b> with Reports, ALV, Data Dictionary.</li>
-          <li>Worked with <b>BAPIs, IDocs</b> and applied SAP best practices.</li>
+          <li>Designed and implemented <b>SAP S/4HANA ABAP modules</b> with Reports, ALV, and Data Dictionary.</li>
+          <li>Worked with <b>BAPIs, IDocs</b> and applied SAP best practices for performance tuning.</li>
         </ul>
       </li>
     </ul>
@@ -96,7 +143,10 @@
 
   <section>
     <h2>Certifications</h2>
-    <p><b>SAP Certified Associate – Back-End Developer (ABAP Cloud)</b> – SAP</p>
+    <ul>
+      <li><b>SAP Certified Associate – Back-End Developer (ABAP Cloud)</b> – SAP</li>
+      <li><b>SAP Certified Professional – Solution Architect (SAP BTP)</b> – SAP</li>
+    </ul>
   </section>
 
   <section>
@@ -104,27 +154,43 @@
     <ul>
       <li><b>Employee Certification Tracker</b> – SAP ABAP, S/4HANA (Apr 2025 – May 2025)  
         <ul>
-          <li>Custom ABAP module to track/manage employee certifications & licenses.</li>
+          <li>Built custom ABAP module in SAP S/4HANA to track/manage employee certifications & licenses.</li>
           <li>Implemented Reports, ALV, Debugging, and Performance Tuning.</li>
         </ul>
       </li>
 
-      <li><b>AI-powered Code Clone Detection</b> – Python, ML (2025)  
+      <li><b>AI-powered Code Clone Detection</b> – Python, ML, AST, KNN (May 2025 – Jul 2025)  
         <ul>
-          <li>Developed a clone detection and refactoring system using <b>KNN</b> and <b>AST-based Extract Method</b>.</li>
-          <li>Processed <b>79K+ Python files</b> from the CodeNet dataset to detect Type-1 to Type-3 clones.</li>
-          <li>Achieved <b>45% reduction in average LOC</b> and added <b>48K+ reusable functions</b>.</li>
-          <li>Improved code <b>modularity, readability, and maintainability</b>.</li>
+          <li>Developed a system for detecting and refactoring code clones (Type-1 to Type-3).</li>
+          <li>Processed <b>79K+ Python files</b> from CodeNet dataset.</li>
+          <li>Achieved <b>45% reduction in LOC</b> and added <b>48K+ reusable functions</b>.</li>
         </ul>
       </li>
     </ul>
   </section>
 
-  <section>
+  <section class="skills">
     <h2>Technical Skills</h2>
-    <p><b>Languages:</b> Java (OOP), ABAP, Python, C/C++, SQL, JavaScript, HTML/CSS</p>
-    <p><b>Developer Tools:</b> Git, VS Code, Visual Studio, Eclipse</p>
-    <p><b>ERP/Platforms:</b> SAP S/4HANA, SAP BTP, SAP HCM</p>
+    <p>
+      <span class="badge">Java (OOP)</span>
+      <span class="badge">ABAP</span>
+      <span class="badge">Python</span>
+      <span class="badge">C/C++</span>
+      <span class="badge">SQL</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">HTML/CSS</span>
+    </p>
+    <p>
+      <span class="badge">Git</span>
+      <span class="badge">VS Code</span>
+      <span class="badge">Visual Studio</span>
+      <span class="badge">Eclipse</span>
+    </p>
+    <p>
+      <span class="badge">SAP S/4HANA</span>
+      <span class="badge">SAP BTP</span>
+      <span class="badge">SAP HCM</span>
+    </p>
   </section>
 
   <footer>
